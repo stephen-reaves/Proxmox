@@ -6,14 +6,14 @@
 # Variables (Modify as needed)
 VMID=120  # Unique VM ID
 VMNAME="win11-vm"
-ISO_STORAGE="local"  # Storage ID where the ISO is stored
+ISO_STORAGE="isos"  # Storage ID where the ISO is stored
 ISO_FILE="Win11.iso"  # Windows 11 ISO filename
 VIRTIO_ISO="virtio-win.iso"  # VirtIO drivers ISO
-STORAGE_TYPE="local-lvm"  # Storage type
+STORAGE_TYPE="vmstore"  # Storage type
 DISK_SIZE="64G"
 RAM_SIZE="8192"  # 8GB RAM
 CPU_CORES=4
-BRIDGE="vmbr0"
+BRIDGE="vlan10"
 
 # Function to check if a VM ID is in use
 check_vm_exists() {
